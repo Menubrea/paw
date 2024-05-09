@@ -1,0 +1,57 @@
+@import "../../index.css";
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.padding {
+  padding: var(--spacing-xs) var(--spacing-md) var(--spacing-md)
+    var(--spacing-md);
+}
+.headerContainer p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+}
+
+.petCard {
+  max-width: 300px;
+  min-width: 300px;
+  color: var(--ui-text);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.petCard img {
+  width: 100%;
+  height: 437px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  border-radius: 10px;
+  border: 0.3px solid var(--ui-grey);
+  object-fit: contain;
+  transition: 0.5s ease-in-out;
+}
+
+.petCard p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+}
+
+.petCard:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 800px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+}
